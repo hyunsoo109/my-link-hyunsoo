@@ -6,7 +6,7 @@ const isGitHubPages = process.env.GITHUB_PAGES === "true";
 const nextConfig: NextConfig = {
   ...(isGitHubPages
     ? {
-        output: "export",
+        output: "export" as const,
         basePath: "/my-link-hyunsoo",
         trailingSlash: true,
         images: {
