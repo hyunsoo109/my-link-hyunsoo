@@ -40,6 +40,9 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: "true"
+          
+      - name: Disable Jekyll
+        run: touch ./out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
