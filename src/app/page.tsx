@@ -14,7 +14,7 @@ export default function Home() {
 
         {/* 소개글 */}
         <p className="mt-3 text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed break-keep">
-          안녕하세요: 바이브 코딩을 배우고 있는 대학생입니다.
+          기술로 일상의 문제를 해결하고 가치 있는 경험을 만드는 개발자 조현수입니다. 새로운 기술을 빠르게 탐구하고, 사용자 중심의 서비스를 구현하는 것을 좋아합니다.
         </p>
       </div>
     </main>
