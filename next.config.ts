@@ -1,5 +1,19 @@
+
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {};
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+
+const nextConfig: NextConfig = {
+  ...(isGitHubPages
+    ? {
+        output: "export",
+        basePath: "/my-link-hyunsoo",
+        trailingSlash: true,
+        images: {
+          unoptimized: true,
+        },
+      }
+    : {}),
+};
 
 export default nextConfig;
